@@ -40,7 +40,10 @@ const ExpenseForm = (props) => {
     } else if (identifier === "date") {
       setUserInput((prevState) => ({ ...prevState, enteredDate: value }));
     } else {
-      setUserInput((prevState) => ({ ...prevState, enteredAmount: value }));
+      setUserInput((prevState) => ({
+        ...prevState,
+        value,
+      }));
     }
   };
 
@@ -53,14 +56,15 @@ const ExpenseForm = (props) => {
       enteredDate: date,
     } = userInput;
 
-    const expenseData = { title, amount, date: new Date(date) };
+    const expenseData = { title, amount: Number(amount), date: new Date(date) };
 
-    setUserInput((prevState) => ({
-      ...prevState,
-      enteredTitle: "",
-      enteredAmount: "",
-      enteredDate: "",
-    }));
+    if (expenseData)
+      setUserInput((prevState) => ({
+        ...prevState,
+        enteredTitle: "",
+        enteredAmount: "",
+        enteredDate: "",
+      }));
 
     props.onSaveExpenseData(expenseData);
   };
@@ -102,6 +106,7 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
+        <button onClick={props.onCancel}>Cancel</button>
         <button type="submit">Add Expense</button>
       </div>
     </form>
