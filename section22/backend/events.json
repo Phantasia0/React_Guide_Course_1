@@ -1,12 +1,1 @@
-{
-  "events": [
-    {
-      "title": "A new event",
-      "image": "https://cdn.muenchen-p.de/fl_progressive,q_65/.imaging/stk/responsive/teaser300/dms/va-2016/muenchner-christkindlmarkt/christkindlmarkt-marienplat-logo-hp/document/christkindlmarkt-marienplat-logo-hp.jpg",
-      "date": "2022-10-01",
-      "description": "Some awesome event!",
-      "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"
-    }
-  ],
-  "users": []
-}
+{"events":[{"title":"Testing Complete","image":"https://www.urbanbrush.net/web/wp-content/uploads/edd/2022/11/urbanbrush-20221108214712319041.jpg","date":"2023-10-07","description":"Testing","id":"2b32e6e5-4d01-455d-bdc0-09822f8cb5c6"}],"users":[{"email":"test@test.com","password":"$2a$12$XUsxBPypX.o1LVU87BZnMeYmc6Ra7sTK3jwlWp2yd3pkC.Pv4u93.","id":"8f3082a8-7532-4d9b-bd41-edf08e6c4fa2"},{"email":"test1@test.com","password":"$2a$12$OSwtQq.tYnCA3tTYwTWYz.ISMLFsjk3P5il443erqoFTb2KuGguay","id":"2c9d58e6-042d-4917-bb1f-e45991945434"}]}
